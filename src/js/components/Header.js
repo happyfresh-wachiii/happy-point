@@ -16,7 +16,6 @@ export default class Header extends React.Component {
           <span>Please enter your email into text area  : </span>
           <input value={this.props.title} onChange={this.handleChange.bind(this)} />
         </div>
-       
       </div>
     );
   }
