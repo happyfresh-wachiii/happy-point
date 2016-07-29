@@ -12,7 +12,11 @@ export default class Header extends React.Component {
     return (
       <div>
         <Title title={this.props.title} />
-        <input value={this.props.title} onChange={this.handleChange.bind(this)} />
+        <div class="col-lg-12">
+          <span>Please enter your email into text area  : </span>
+          <input value={this.props.title} onChange={this.handleChange.bind(this)} />
+        </div>
+       
       </div>
     );
   }

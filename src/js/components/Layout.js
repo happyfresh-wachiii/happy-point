@@ -7,7 +7,7 @@ export default class Layout extends React.Component {
   constructor() {
     super();
     this.state = {
-      title: "Welcome",
+      title: "Welcome to Haapy points",
     };
   }
 
@@ -18,6 +18,7 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div>
+
         <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
         <Footer />
       </div>
