@@ -13,7 +13,7 @@ export default class Header extends React.Component {
       <div>
         <Title title={this.props.title} />
         <div class="col-lg-12">
-          <span>Please enter your email into text area  : </span>
+          <span>Please enter your email : </span>
           <input value={this.props.title} onChange={this.handleChange.bind(this)} />
         </div>
       </div>
