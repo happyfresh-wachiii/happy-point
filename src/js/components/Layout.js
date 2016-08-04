@@ -1,13 +1,14 @@
 import React from "react";
 
 import Footer from "./Footer";
-import Header from "./Header";
+import HomeContent from "./HomeContent";
+import ResultContent from "./ResultContent";
 
 export default class Layout extends React.Component {
   constructor() {
     super();
     this.state = {
-      title: "Welcome to Haapy points",
+      title: "Welcome to Haapy points Waranya Pimsri",
     };
   }
 
@@ -19,7 +20,9 @@ export default class Layout extends React.Component {
     return (
       <div>
 
-        <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
+        
+       <HomeContent />
+       {/* <ResultContent /> */}
         <Footer />
       </div>
     );
