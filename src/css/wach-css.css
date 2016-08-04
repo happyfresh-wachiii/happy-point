@@ -6,6 +6,7 @@
     background-image: url("../images/Logo_happyfresh.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    position:relative;
 }
 
 #company-logoBlack {
@@ -16,13 +17,43 @@
     background-image: url("../images/Logo_happyfresh.png");
     background-repeat: no-repeat;
     background-size: contain;
+    position:relative;
 }
 
-.news-loem {
-    background:url("../images/Shopper_shot01-Snack.jpg") no-repeat center top scroll;
-    background-size: 100% auto;
-    padding-bottom: 20%;
-    opacity: 0.3;
+.well {
+   background-color: rgba(245, 245, 245, 0.6);
+   position:relative;
+}
+
+.my-promo {
+    position: relative;
+    overflow: hidden;
+}
+
+.my-promo h1 {
+    padding: 20px;
+    color: #000;
+    position: relative;
+    z-index: 2;
+}
+
+.my-promo p {
+
+    margin-left: 40px;
+    font-size: 120%;
+    color: #000;
+    position: relative;
+    z-index: 2;
+}
+
+
+.my-promo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
 }
 
 .dark-fillter {
@@ -40,13 +71,30 @@
     color: #fff;
     font-family: 'cloudbold', sans-serif;
     text-shadow: 3px 3px #000;
+    position:relative;
+}
+
+.jumbotron h2{
+    color: #fff;
+     margin-left: 10%;
+     text-shadow: 2px 2px #000;
+     font-size: 330%;
+     position:relative;
+    font-family: 'cloud_lightlight', sans-serif;
+}
+
+.jumbotron h4{
+    font-family: 'cloud_lightlight', sans-serif;
+    font-size: 200%;
+    position:relative;
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
 }
 
 .jumbotron p{
     color: #fff;
     font-family: 'cloud_lightlight', sans-serif;
-    
-    
 }
 
 .light-color {
@@ -80,11 +128,28 @@
     font-family: 'cloudbold', sans-serif;
 }
 
+.cloud_lightlight {
+    font-family: 'cloud_lightlight', sans-serif;
+}
+
 .fontCloudbold-non-align {
     font-family: 'cloudbold', sans-serif;
     font-size: 250%;
 }
 
+.bangna_newregular {
+    font-family: 'bangna_newregular', sans-serif;
+}
+
+.btn-xlarge {
+    font-family: 'cloudbold', sans-serif;
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
 
 @font-face {
     font-family: 'wdb_bangnaregular';

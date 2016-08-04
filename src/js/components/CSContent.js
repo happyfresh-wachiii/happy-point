@@ -1,9 +1,11 @@
 import React from "react";
 
 
-export default class ResultContent extends React.Component {
+export default class CSContent extends React.Component {
   render() {
-  console.log((this.props.emailWith != undefined)?this.props.emailWith:"Bye");
+
+    const email = (this.props.emailWith != undefined)?this.props.emailWith:"Bye";
+    console.log(email);
 
     return (
       <result>
@@ -14,25 +16,32 @@ export default class ResultContent extends React.Component {
         </nav>
         <div class="container">
           <div class="jumbotron jumboImage">
-              <div class="container"><h1><b>Happy +points สะสม</b></h1>
+              <div class="container"><h1><b>Happy +points สะสม ของ </b></h1>
+              <h2>{ email }</h2>
               <div class="col-sm-12 " >
-                  <div class="col-sm-4 text-right fontCloud_lightlight light-color">คือ</div>
-                  <div class="col-sm-4 fontCloudbold-non-align"><div class="well text-center">000</div></div>
-                  <div class="col-sm-4 fontCloud_lightlight light-color">คะแนน</div>
+                  <div class="col-sm-4 text-right light-color"><h4>คือ</h4></div>
+                  <div class="col-sm-4 fontCloudbold-non-align"><input type="text" class="form-control text-center" /></div>
+                  <div class="col-sm-4 light-color"><h4>คะแนน</h4></div>
               </div>
               <div class="col-sm-12" >
-                  <div class="col-sm-4 text-right fontCloud_lightlight light-color">ใช้ไปแล้ว</div>
-                  <div class="col-sm-4 fontCloudbold-non-align"><div class="well text-center">000</div></div>
-                  <div class="col-sm-4 fontCloud_lightlight light-color">คะแนน</div>
+                  <div class="col-sm-4 text-right light-color"><h4>อยากใช้</h4></div>
+                  <div class="col-sm-4 fontCloudbold-non-align"><input type="text" class="form-control text-center"/></div>
+                  <div class="col-sm-4 light-color"><h4>คะแนน</h4></div>
               </div>
               <div class="col-sm-12" >
-                  <div class="col-sm-4 text-right fontCloud_lightlight light-color">คงเหลือ</div>
-                  <div class="col-sm-4 fontCloudbold-non-align"><div class="well text-center">000</div></div>
-                  <div class="col-sm-4 fontCloud_lightlight light-color">คะแนน</div>
+                  <div class="col-sm-4 text-right light-color"><h4>คงเหลือ</h4></div>
+                  <div class="col-sm-4 fontCloudbold-non-align"><input type="text" class="form-control text-center"/></div>
+                  <div class="col-sm-4 light-color"><h4>คะแนน</h4></div>
               </div>
             </div> 
           </div>
         </div>
+        <br/>
+        <hr/>
+        <div class="container">
+            <button class="btn-success pull-right btn-xlarge">Redem points</button>
+        </div>
+        <hr/>
         <br/>
         <div class="container">
             <div class="well my-promo">
