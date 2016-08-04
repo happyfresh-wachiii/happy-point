@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import HomeContent from "./HomeContent";
 import ResultContent from "./ResultContent";
 import CSContent from "./CSContent";
+import ForgetPassContent from "./ForgetPassContent";
 
 export default class Layout extends React.Component {
   constructor() {
@@ -29,11 +30,14 @@ export default class Layout extends React.Component {
   console.log(page);
   var element = <div></div>;  
   if( page == "home" ){
-    element = <HomeContent changePage={this.changePage.bind(this)}/>
+    element = <HomeContent changePage={this.changePage.bind(this)} emailWith={ this.state.email } />
   }else if( page == "result" ){
     element = <ResultContent emailWith={ this.state.email }/>
   }else if( page == "CS-Maneger" ){
     element = <CSContent emailWith={ 'นาย สมมติ' }/>
+  }
+  else if( page == "forget" ){
+    element = <ForgetPassContent changePage={this.changePage.bind(this)} />
   }
 
 

@@ -17,7 +17,11 @@ export default class CSContent extends React.Component {
         <div class="container">
           <div class="jumbotron jumboImage">
               <div class="container"><h1><b>Happy +points สะสม ของ </b></h1>
-              <h2>{ email }</h2>
+               <div class="col-sm-12 " >
+                  <div class="col-sm-4 text-right light-color"><h4>คุณ</h4></div>
+                  <div class="col-sm-4 fontCloudbold-non-align"><input type="text" class="form-control text-center" /></div>
+                  <div class="col-sm-4 light-color"><button class="btn btn-success bangna_newregular"><b>Find</b></button></div>
+              </div>
               <div class="col-sm-12 " >
                   <div class="col-sm-4 text-right light-color"><h4>คือ</h4></div>
                   <div class="col-sm-4 fontCloudbold-non-align"><input type="text" class="form-control text-center" /></div>
